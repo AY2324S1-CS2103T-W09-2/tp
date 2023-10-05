@@ -111,7 +111,7 @@
         "quick-start": "Quick start",
         "features": "Features",
         "viewing-help-help": "Viewing help : help",
-        "switching-tabs-tab": "Switching tabs : tab",
+        "switching-tabs-tab": "Switching tabs → tab",
         "contact-management": "Contact Management",
         "finance-management": "Finance Management",
         "events-management": "Events Management",
@@ -128,7 +128,8 @@
       "src": "index.md",
       "title": "",
       "headings": {
-        "addressbook-level-3": "AddressBook Level-3"
+        "freelancebuddy": "FreelanceBuddy",
+        "features": "Features"
       },
       "headingKeywords": {}
     },
