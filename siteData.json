@@ -10,7 +10,8 @@
         "daniel-loh": "Daniel Loh",
         "chew-jun-heng": "Chew Jun Heng",
         "ito-tetsushi": "Ito Tetsushi",
-        "nicholas-cher": "Nicholas Cher"
+        "nicholas-cher": "Nicholas Cher",
+        "debbie-hii": "Debbie Hii"
       },
       "headingKeywords": {}
     },
@@ -134,6 +135,14 @@
     {
       "src": "team/chew01.md",
       "title": "Jun Heng's Project Portfolio Page",
+      "headings": {
+        "project-freelancebuddy": "Project: FreelanceBuddy"
+      },
+      "headingKeywords": {}
+    },
+    {
+      "src": "team/flexibo.md",
+      "title": "Debbie's Project Portfolio Page",
       "headings": {
         "project-freelancebuddy": "Project: FreelanceBuddy"
       },
