@@ -254,7 +254,7 @@ with(this){return _c('p',[_c('strong',[_v("Precondition")]),_v(": -")])}
 with(this){return _c('p',[_c('strong',[_v("MSS")])])}
 },function anonymous(
 ) {
-with(this){return _c('ol',[_c('li',[_c('p',[_v("User needs help on using the application")])]),_v(" "),_c('li',[_c('p',[_v("User requests for help")])]),_v(" "),_c('li',[_c('p',[_v("FreelanceBuddy shows a pop-up with a link to the user guide")])]),_v(" "),_c('li',[_c('p',[_v("User copies the URL and references the user guide")]),_v(" "),_c('p',[_v("Use case ends.")])])])}
+with(this){return _c('ol',[_c('li',[_c('p',[_v("User requests for help")])]),_v(" "),_c('li',[_c('p',[_v("FreelanceBuddy shows a pop-up with a link to the user guide")])]),_v(" "),_c('li',[_c('p',[_v("User copies the URL and references the user guide")]),_v(" "),_c('p',[_v("Use case ends.")])])])}
 },function anonymous(
 ) {
 with(this){return _c('h4',{attrs:{"id":"use-case-uc2-navigating-between-tabs"}},[_v("Use Case: UC2 - Navigating between tabs"),_c('a',{staticClass:"fa fa-anchor",attrs:{"href":"#use-case-uc2-navigating-between-tabs","onclick":"event.stopPropagation()"}})])}
@@ -278,43 +278,43 @@ with(this){return _c('ul',[_c('li',[_c('p',[_v("2a. The user inputs an invalid s
 with(this){return _c('h4',{attrs:{"id":"use-case-uc3-add-a-client-contact"}},[_v("Use Case: UC3 - Add a client contact"),_c('a',{staticClass:"fa fa-anchor",attrs:{"href":"#use-case-uc3-add-a-client-contact","onclick":"event.stopPropagation()"}})])}
 },function anonymous(
 ) {
-with(this){return _c('p',[_c('strong',[_v("Precondition")]),_v(": - User is on Contacts tab")])}
+with(this){return _c('p',[_c('strong',[_v("Precondition")]),_v(": User is on "),_c('strong',[_v("Contacts")]),_v(" tab")])}
 },function anonymous(
 ) {
 with(this){return _c('p',[_c('strong',[_v("MSS")])])}
 },function anonymous(
 ) {
-with(this){return _c('ol',[_c('li',[_c('p',[_v("FreelanceBuddy shows the list of Contacts")])]),_v(" "),_c('li',[_c('p',[_v("User requests to add a new contact")])]),_v(" "),_c('li',[_c('p',[_v("FreelanceBuddy creates a new contact and shows it within the list")]),_v(" "),_c('p',[_v("Use case ends.")])])])}
+with(this){return _c('ol',[_c('li',[_c('p',[_v("User requests to add a new contact with details")])]),_v(" "),_c('li',[_c('p',[_v("FreelanceBuddy creates a new contact and shows it within the list")]),_v(" "),_c('p',[_v("Use case ends.")])])])}
 },function anonymous(
 ) {
 with(this){return _c('p',[_c('strong',[_v("Extensions")])])}
 },function anonymous(
 ) {
-with(this){return _c('ul',[_c('li',[_c('p',[_v("1a. The list is empty")]),_v(" "),_c('p',[_v("Use case resumes at step 2.")])]),_v(" "),_c('li',[_c('p',[_v("2a. The user inputs invalid syntax")]),_v(" "),_c('ul',[_c('li',[_v("2a1. FreelanceBuddy shows an error message")])]),_v(" "),_c('p',[_v("Use case resumes at step 1.")])])])}
+with(this){return _c('ul',[_c('li',[_v("1a. The user inputs invalid syntax\n"),_c('ul',[_c('li',[_c('p',[_v("1a1. FreelanceBuddy shows an error message")]),_v(" "),_c('p',[_v("Use case resumes at step 1.")])])])])])}
 },function anonymous(
 ) {
 with(this){return _c('h4',{attrs:{"id":"use-case-uc4-delete-a-client-contact"}},[_v("Use Case: UC4 - Delete a client contact"),_c('a',{staticClass:"fa fa-anchor",attrs:{"href":"#use-case-uc4-delete-a-client-contact","onclick":"event.stopPropagation()"}})])}
 },function anonymous(
 ) {
-with(this){return _c('p',[_c('strong',[_v("Precondition")]),_v(": - User is on Contacts tab")])}
+with(this){return _c('p',[_c('strong',[_v("Precondition")]),_v(": User is on "),_c('strong',[_v("Contacts")]),_v(" tab, "),_c('strong',[_v("Contacts")]),_v(" list must have at least one entry")])}
 },function anonymous(
 ) {
 with(this){return _c('p',[_c('strong',[_v("MSS")])])}
 },function anonymous(
 ) {
-with(this){return _c('ol',[_c('li',[_c('p',[_v("FrelanceBuddy shows the list of Contacts")])]),_v(" "),_c('li',[_c('p',[_v("User requests to delete specific entry in the list")])]),_v(" "),_c('li',[_c('p',[_v("FreelanceBuddy deletes the entry")]),_v(" "),_c('p',[_v("Use case ends.")])])])}
+with(this){return _c('ol',[_c('li',[_c('p',[_v("User requests to delete specific entry in the list")])]),_v(" "),_c('li',[_c('p',[_v("FreelanceBuddy deletes the entry")]),_v(" "),_c('p',[_v("Use case ends.")])])])}
 },function anonymous(
 ) {
 with(this){return _c('p',[_c('strong',[_v("Extensions")])])}
 },function anonymous(
 ) {
-with(this){return _c('ul',[_c('li',[_c('p',[_v("1a. The list is empty")]),_v(" "),_c('p',[_v("Use case ends.")])]),_v(" "),_c('li',[_c('p',[_v("2a. The user inputs with invalid syntax")]),_v(" "),_c('ul',[_c('li',[_v("2a1. FreelanceBuddy shows error message")])]),_v(" "),_c('p',[_v("Use case resumes at step 1.")])])])}
+with(this){return _c('ul',[_c('li',[_v("1a. The user inputs with invalid syntax\n"),_c('ul',[_c('li',[_c('p',[_v("1a1. FreelanceBuddy shows error message")]),_v(" "),_c('p',[_v("Use case resumes at step 1.")])])])])])}
 },function anonymous(
 ) {
 with(this){return _c('h4',{attrs:{"id":"use-case-uc5-view-all-client-contacts"}},[_v("Use Case: UC5 - View all client contacts"),_c('a',{staticClass:"fa fa-anchor",attrs:{"href":"#use-case-uc5-view-all-client-contacts","onclick":"event.stopPropagation()"}})])}
 },function anonymous(
 ) {
-with(this){return _c('p',[_c('strong',[_v("Precondition")]),_v(": - User is on Contacts tab")])}
+with(this){return _c('p',[_c('strong',[_v("Precondition")]),_v(": User is on "),_c('strong',[_v("Contacts")]),_v(" tab, "),_c('strong',[_v("Contacts")]),_v(" list must have at least one entry")])}
 },function anonymous(
 ) {
 with(this){return _c('p',[_c('strong',[_v("MSS")])])}
@@ -323,22 +323,22 @@ with(this){return _c('p',[_c('strong',[_v("MSS")])])}
 with(this){return _c('ol',[_c('li',[_c('p',[_v("User requests to view all Contacts")])]),_v(" "),_c('li',[_c('p',[_v("FreelanceBuddy shows a list of all Contacts")]),_v(" "),_c('p',[_v("Use case ends.")])])])}
 },function anonymous(
 ) {
-with(this){return _c('p',[_c('strong',[_v("Extensions")])])}
-},function anonymous(
-) {
-with(this){return _c('ul',[_c('li',[_c('p',[_v("1a. No contacts found that contains given keywords.")]),_v(" "),_c('ul',[_c('li',[_v("1a1. FreelanceBuddy shows error message")])]),_v(" "),_c('p',[_v("Use case ends.")])])])}
-},function anonymous(
-) {
 with(this){return _c('h4',{attrs:{"id":"use-case-uc6-find-a-specific-client-contact"}},[_v("Use Case: UC6 - Find a specific client contact"),_c('a',{staticClass:"fa fa-anchor",attrs:{"href":"#use-case-uc6-find-a-specific-client-contact","onclick":"event.stopPropagation()"}})])}
 },function anonymous(
 ) {
-with(this){return _c('p',[_c('strong',[_v("Precondition")]),_v(": - User is on Contacts tab")])}
+with(this){return _c('p',[_c('strong',[_v("Precondition")]),_v(": User is on "),_c('strong',[_v("Contacts")]),_v(" tab, "),_c('strong',[_v("Contacts")]),_v(" list must have at least one entry")])}
 },function anonymous(
 ) {
 with(this){return _c('p',[_c('strong',[_v("MSS")])])}
 },function anonymous(
 ) {
-with(this){return _c('ol',[_c('li',[_c('p',[_v("User requests to find contacts using keywords")])]),_v(" "),_c('li',[_c('p',[_v("FreelanceBuddy shows a list of Contacts that contains given keywords")]),_v(" "),_c('p',[_v("Use case ends.")])])])}
+with(this){return _c('ol',[_c('li',[_c('p',[_v("User requests to find contacts using keywords")])]),_v(" "),_c('li',[_c('p',[_v("FreelanceBuddy shows a list of Contacts that contains given keywords")]),_v(" "),_c('p',[_v("Use case ends resumes at step 1.")])])])}
+},function anonymous(
+) {
+with(this){return _c('p',[_c('strong',[_v("Extensions")])])}
+},function anonymous(
+) {
+with(this){return _c('ul',[_c('li',[_v("1a. No contacts found that contains given keywords.\n"),_c('ul',[_c('li',[_c('p',[_v("1a1. FreelanceBuddy shows error message")]),_v(" "),_c('p',[_v("Use case ends.")])])])])])}
 },function anonymous(
 ) {
 with(this){return _c('h4',{attrs:{"id":"use-case-uc7-add-an-event"}},[_v("Use Case: UC7 - Add an event"),_c('a',{staticClass:"fa fa-anchor",attrs:{"href":"#use-case-uc7-add-an-event","onclick":"event.stopPropagation()"}})])}
@@ -350,37 +350,37 @@ with(this){return _c('p',[_c('strong',[_v("Precondition")]),_v(": User is on "),
 with(this){return _c('p',[_c('strong',[_v("MSS")])])}
 },function anonymous(
 ) {
-with(this){return _c('ol',[_c('li',[_c('p',[_v("FreelanceBuddy shows a list of Events")])]),_v(" "),_c('li',[_c('p',[_v("User requests to add a new event")])]),_v(" "),_c('li',[_c('p',[_v("FreelanceBuddy creates the Event entry and shows it within the list.")]),_v(" "),_c('p',[_v("Use case ends.")])])])}
+with(this){return _c('ol',[_c('li',[_c('p',[_v("User requests to add a new event")])]),_v(" "),_c('li',[_c('p',[_v("FreelanceBuddy creates the Event entry and shows it within the list.")]),_v(" "),_c('p',[_v("Use case ends.")])])])}
 },function anonymous(
 ) {
 with(this){return _c('p',[_c('strong',[_v("Extensions")])])}
 },function anonymous(
 ) {
-with(this){return _c('ul',[_c('li',[_c('p',[_v("1a. The list is empty")]),_v(" "),_c('p',[_v("Use case resumes at step 2.")])]),_v(" "),_c('li',[_c('p',[_v("2a. The user inputs an invalid index")]),_v(" "),_c('ul',[_c('li',[_c('p',[_v("2a1. FreelanceBuddy shows an error message")]),_v(" "),_c('p',[_v("Use case resumes at step 1.")])])])])])}
+with(this){return _c('ul',[_c('li',[_v("1a. The user inputs an invalid index\n"),_c('ul',[_c('li',[_c('p',[_v("1a1. FreelanceBuddy shows an error message")]),_v(" "),_c('p',[_v("Use case resumes at step 1.")])])])])])}
 },function anonymous(
 ) {
 with(this){return _c('h4',{attrs:{"id":"use-case-uc8-delete-an-event"}},[_v("Use Case: UC8 - Delete an event"),_c('a',{staticClass:"fa fa-anchor",attrs:{"href":"#use-case-uc8-delete-an-event","onclick":"event.stopPropagation()"}})])}
 },function anonymous(
 ) {
-with(this){return _c('p',[_c('strong',[_v("Precondition")]),_v(": User is on "),_c('strong',[_v("Events")]),_v(" tab")])}
+with(this){return _c('p',[_c('strong',[_v("Precondition")]),_v(": User is on "),_c('strong',[_v("Events")]),_v(" tab, "),_c('strong',[_v("Events")]),_v(" list must have at least one entry")])}
 },function anonymous(
 ) {
 with(this){return _c('p',[_c('strong',[_v("MSS")])])}
 },function anonymous(
 ) {
-with(this){return _c('ol',[_c('li',[_c('p',[_v("FreelanceBuddy shows a list of events")])]),_v(" "),_c('li',[_c('p',[_v("User requests to delete a specific entry in the list")])]),_v(" "),_c('li',[_c('p',[_v("FreelanceBuddy deletes the entry")]),_v(" "),_c('p',[_v("Use case ends.")])])])}
+with(this){return _c('ol',[_c('li',[_c('p',[_v("User requests to delete a specific entry in the list")])]),_v(" "),_c('li',[_c('p',[_v("FreelanceBuddy deletes the entry")]),_v(" "),_c('p',[_v("Use case ends.")])])])}
 },function anonymous(
 ) {
 with(this){return _c('p',[_c('strong',[_v("Extensions")])])}
 },function anonymous(
 ) {
-with(this){return _c('ul',[_c('li',[_c('p',[_v("1a. The list is empty\nUse case ends.")])]),_v(" "),_c('li',[_c('p',[_v("2a. The user inputs an invalid index")]),_v(" "),_c('ul',[_c('li',[_c('p',[_v("2a1. FreelanceBuddy shows an error message")]),_v(" "),_c('p',[_v("Use case resumes at step 1.")])])])])])}
+with(this){return _c('ul',[_c('li',[_v("1a. The user inputs an invalid index\n"),_c('ul',[_c('li',[_c('p',[_v("1a1. FreelanceBuddy shows an error message")]),_v(" "),_c('p',[_v("Use case resumes at step 1.")])])])])])}
 },function anonymous(
 ) {
 with(this){return _c('h4',{attrs:{"id":"use-case-uc9-view-all-events"}},[_v("Use Case: UC9 - View all events"),_c('a',{staticClass:"fa fa-anchor",attrs:{"href":"#use-case-uc9-view-all-events","onclick":"event.stopPropagation()"}})])}
 },function anonymous(
 ) {
-with(this){return _c('p',[_c('strong',[_v("Precondition")]),_v(": User is on "),_c('strong',[_v("Events")]),_v(" tab")])}
+with(this){return _c('p',[_c('strong',[_v("Precondition")]),_v(": User is on "),_c('strong',[_v("Events")]),_v(" tab, "),_c('strong',[_v("Events")]),_v(" list must have at least one entry")])}
 },function anonymous(
 ) {
 with(this){return _c('p',[_c('strong',[_v("MSS")])])}
@@ -392,7 +392,7 @@ with(this){return _c('ol',[_c('li',[_v("User requests to view all events")]),_v(
 with(this){return _c('h4',{attrs:{"id":"use-case-uc10-view-most-urgent-events"}},[_v("Use Case: UC10 - View most urgent events"),_c('a',{staticClass:"fa fa-anchor",attrs:{"href":"#use-case-uc10-view-most-urgent-events","onclick":"event.stopPropagation()"}})])}
 },function anonymous(
 ) {
-with(this){return _c('p',[_c('strong',[_v("Precondition")]),_v(": User is on "),_c('strong',[_v("Events")]),_v(" tab")])}
+with(this){return _c('p',[_c('strong',[_v("Precondition")]),_v(": User is on "),_c('strong',[_v("Events")]),_v(" tab, "),_c('strong',[_v("Events")]),_v(" list must have at least one entry")])}
 },function anonymous(
 ) {
 with(this){return _c('p',[_c('strong',[_v("MSS")])])}
@@ -410,37 +410,37 @@ with(this){return _c('p',[_c('strong',[_v("Precondition")]),_v(": User is on "),
 with(this){return _c('p',[_c('strong',[_v("MSS")])])}
 },function anonymous(
 ) {
-with(this){return _c('ol',[_c('li',[_c('p',[_v("FreelanceBuddy shows a list of commissions and expenses")])]),_v(" "),_c('li',[_c('p',[_v("User requests to add a new commission")])]),_v(" "),_c('li',[_c('p',[_v("FreelanceBuddy adds the new commission to the top of the list")]),_v(" "),_c('p',[_v("Use case ends.")])])])}
+with(this){return _c('ol',[_c('li',[_c('p',[_v("User requests to add a new commission")])]),_v(" "),_c('li',[_c('p',[_v("FreelanceBuddy adds the new commission to the top of the list")]),_v(" "),_c('p',[_v("Use case ends.")])])])}
 },function anonymous(
 ) {
 with(this){return _c('p',[_c('strong',[_v("Extensions")])])}
 },function anonymous(
 ) {
-with(this){return _c('ul',[_c('li',[_c('p',[_v("1a. The list is empty")]),_v(" "),_c('p',[_v("Use case resumes at step 2.")])]),_v(" "),_c('li',[_c('p',[_v("2a. The user inputs an invalid syntax")]),_v(" "),_c('ul',[_c('li',[_c('p',[_v("2a1. FreelanceBuddy shows an error message")]),_v(" "),_c('p',[_v("Use case resumes at step 1.")])])])])])}
+with(this){return _c('ul',[_c('li',[_v("1a. The user inputs an invalid syntax\n"),_c('ul',[_c('li',[_c('p',[_v("1a1. FreelanceBuddy shows an error message")]),_v(" "),_c('p',[_v("Use case resumes at step 1.")])])])])])}
 },function anonymous(
 ) {
 with(this){return _c('h4',{attrs:{"id":"use-case-uc12-delete-a-finance-entry"}},[_v("Use Case: UC12 - Delete a finance entry"),_c('a',{staticClass:"fa fa-anchor",attrs:{"href":"#use-case-uc12-delete-a-finance-entry","onclick":"event.stopPropagation()"}})])}
 },function anonymous(
 ) {
-with(this){return _c('p',[_c('strong',[_v("Precondition")]),_v(": User is on "),_c('strong',[_v("Finance")]),_v(" tab")])}
+with(this){return _c('p',[_c('strong',[_v("Precondition")]),_v(": User is on "),_c('strong',[_v("Finance")]),_v(" tab, "),_c('strong',[_v("Finance")]),_v(" list must have at least one entry")])}
 },function anonymous(
 ) {
 with(this){return _c('p',[_c('strong',[_v("MSS")])])}
 },function anonymous(
 ) {
-with(this){return _c('ol',[_c('li',[_c('p',[_v("FreelanceBuddy shows a list of commissions and expenses")])]),_v(" "),_c('li',[_c('p',[_v("User requests to delete a specific entry in the list")])]),_v(" "),_c('li',[_c('p',[_v("FreelanceBuddy deletes the entry")]),_v(" "),_c('p',[_v("Use case ends.")])])])}
+with(this){return _c('ol',[_c('li',[_c('p',[_v("User requests to delete a specific entry in the list")])]),_v(" "),_c('li',[_c('p',[_v("FreelanceBuddy deletes the entry")]),_v(" "),_c('p',[_v("Use case ends.")])])])}
 },function anonymous(
 ) {
 with(this){return _c('p',[_c('strong',[_v("Extensions")])])}
 },function anonymous(
 ) {
-with(this){return _c('ul',[_c('li',[_c('p',[_v("1a. The list is empty")]),_v(" "),_c('p',[_v("Use case ends.")])]),_v(" "),_c('li',[_c('p',[_v("2a. The user inputs an invalid index")]),_v(" "),_c('ul',[_c('li',[_c('p',[_v("2a1. FreelanceBuddy shows an error message")]),_v(" "),_c('p',[_v("Use case resumes at step 1.")])])])])])}
+with(this){return _c('ul',[_c('li',[_v("1a. The user inputs an invalid index\n"),_c('ul',[_c('li',[_c('p',[_v("1a1. FreelanceBuddy shows an error message")]),_v(" "),_c('p',[_v("Use case resumes at step 1.")])])])])])}
 },function anonymous(
 ) {
 with(this){return _c('h4',{attrs:{"id":"use-case-uc13-view-all-finance-entries"}},[_v("Use Case: UC13 - View all finance entries"),_c('a',{staticClass:"fa fa-anchor",attrs:{"href":"#use-case-uc13-view-all-finance-entries","onclick":"event.stopPropagation()"}})])}
 },function anonymous(
 ) {
-with(this){return _c('p',[_c('strong',[_v("Precondition")]),_v(": User is on "),_c('strong',[_v("Finance")]),_v(" tab")])}
+with(this){return _c('p',[_c('strong',[_v("Precondition")]),_v(": User is on "),_c('strong',[_v("Finance")]),_v(" tab, "),_c('strong',[_v("Finance")]),_v(" list must have at least one entry")])}
 },function anonymous(
 ) {
 with(this){return _c('p',[_c('strong',[_v("MSS")])])}
@@ -485,6 +485,6 @@ with(this){return _c('h3',{attrs:{"id":"saving-data"}},[_v("Saving data"),_c('a'
 with(this){return _c('ol',[_c('li',[_c('p',[_v("Dealing with missing/corrupted data files")]),_v(" "),_c('ol',[_c('li',[_c('em',[_v("{explain how to simulate a missing/corrupted file, and the expected behavior}")])])])]),_v(" "),_c('li',[_c('p',[_c('em',[_v("{ more test cases …​ }")])])])])}
 },function anonymous(
 ) {
-with(this){return _c('footer',[_c('div',{staticClass:"text-center"},[_c('small',[_v("["),_c('span',[_c('strong',[_v("Powered by")])]),_v(" "),_c('img',{attrs:{"src":"https://markbind.org/favicon.ico","width":"30"}}),_v(" "),_c('a',{attrs:{"href":"https://markbind.org/"}},[_v("MarkBind 5.1.0")]),_v(", generated on Fri, 6 Oct 2023, 15:31:18 GMT+8]")])])])}
+with(this){return _c('footer',[_c('div',{staticClass:"text-center"},[_c('small',[_v("["),_c('span',[_c('strong',[_v("Powered by")])]),_v(" "),_c('img',{attrs:{"src":"https://markbind.org/favicon.ico","width":"30"}}),_v(" "),_c('a',{attrs:{"href":"https://markbind.org/"}},[_v("MarkBind 5.1.0")]),_v(", generated on Fri, 6 Oct 2023, 21:41:26 GMT+8]")])])])}
 }];
   
