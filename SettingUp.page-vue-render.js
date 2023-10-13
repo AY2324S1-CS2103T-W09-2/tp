@@ -41,6 +41,6 @@ with(this){return _c('li',[_c('p',[_c('strong',[_v("Learn the design")])]),_v(" 
 with(this){return _c('li',[_c('p',[_c('strong',[_v("Do the tutorials")]),_v("\nThese tutorials will help you get acquainted with the codebase.")]),_v(" "),_c('ul',[_c('li',[_c('a',{attrs:{"href":"/tp/tutorials/TracingCode.html"}},[_v("Tracing code")])]),_v(" "),_c('li',[_c('a',{attrs:{"href":"/tp/tutorials/AddRemark.html"}},[_v("Adding a new command")])]),_v(" "),_c('li',[_c('a',{attrs:{"href":"/tp/tutorials/RemovingFields.html"}},[_v("Removing fields")])])])])}
 },function anonymous(
 ) {
-with(this){return _c('footer',[_c('div',{staticClass:"text-center"},[_c('small',[_v("["),_c('span',[_c('strong',[_v("Powered by")])]),_v(" "),_c('img',{attrs:{"src":"https://markbind.org/favicon.ico","width":"30"}}),_v(" "),_c('a',{attrs:{"href":"https://markbind.org/"}},[_v("MarkBind 5.1.0")]),_v(", generated on Fri, 13 Oct 2023, 0:37:16 GMT+8]")])])])}
+with(this){return _c('footer',[_c('div',{staticClass:"text-center"},[_c('small',[_v("["),_c('span',[_c('strong',[_v("Powered by")])]),_v(" "),_c('img',{attrs:{"src":"https://markbind.org/favicon.ico","width":"30"}}),_v(" "),_c('a',{attrs:{"href":"https://markbind.org/"}},[_v("MarkBind 5.1.0")]),_v(", generated on Fri, 13 Oct 2023, 15:56:50 GMT+8]")])])])}
 }];
   
