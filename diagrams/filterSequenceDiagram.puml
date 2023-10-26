@@ -1,0 +1,31 @@
+@startuml
+!define USER_COLOR #0000FF
+!define UI_COLOR #00A200
+!define LOGIC_COLOR #FF7700
+!define MODEL_COLOR #8B00FF
+!define STORAGE_COLOR #FF0000
+
+Actor User as user USER_COLOR
+Participant ":UI" as ui UI_COLOR
+Participant ":Logic" as logic LOGIC_COLOR
+Participant ":Model" as model MODEL_COLOR
+
+user -[USER_COLOR]> ui : Request sort/filter events
+activate ui UI_COLOR
+
+ui -[UI_COLOR]> logic : Execute sort/filter
+activate logic LOGIC_COLOR
+
+logic -[LOGIC_COLOR]> model : Retrieve event list
+activate model MODEL_COLOR
+
+model -[MODEL_COLOR]-> model : Sort and filter events
+model -[MODEL_COLOR]-> logic : Return sorted/filtered list
+deactivate model
+
+logic -[LOGIC_COLOR]> ui : Return sorted/filtered events
+deactivate logic
+
+ui--[UI_COLOR]> user
+deactivate ui
+@enduml
