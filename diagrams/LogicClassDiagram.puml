@@ -6,11 +6,11 @@ skinparam classBackgroundColor LOGIC_COLOR
 
 package Logic as LogicPackage {
 
-Class AddressBookParser
+Class "{abstract}\nParseCommandHandler" as ParseCommandHandler
+Class ContactParser
 Class XYZCommand
 Class CommandResult
 Class "{abstract}\nCommand" as Command
-
 
 Class "<<interface>>\nLogic" as Logic
 Class LogicManager
@@ -26,9 +26,14 @@ package Storage {
 Class HiddenOutside #FFFFFF
 HiddenOutside ..> Logic
 
+ContactsTab .down.> LogicManager
+note right of ContactsTab: This logic is mirrored for all three tabs\n i.e. FinanceTab will have a FinanceParser instead
+
 LogicManager .right.|> Logic
-LogicManager -right->"1" AddressBookParser
-AddressBookParser ..> XYZCommand : creates >
+LogicManager -down->"1" ParseCommandHandler
+ContactParser -up-|> ParseCommandHandler
+
+ContactParser ..> XYZCommand : creates >
 
 XYZCommand -up-|> Command
 LogicManager .left.> Command : executes >
