@@ -1,0 +1,17 @@
+@startuml
+!include style.puml
+skinparam arrowThickness 1.1
+skinparam arrowColor MODEL_COLOR
+skinparam classBackgroundColor MODEL_COLOR
+
+FinancesBook *-right-> "1" UniqueFinancesList
+
+Class "{abstract}\nFinance" as Finance
+UniqueFinancesList -right-> Finance
+
+Finance *--> Amount
+Finance *--> Description
+Finance *--> TimeDue
+Finance *--> Person
+
+@enduml

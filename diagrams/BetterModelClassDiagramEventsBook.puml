@@ -1,0 +1,23 @@
+@startuml
+!include style.puml
+skinparam arrowThickness 1.1
+skinparam arrowColor MODEL_COLOR
+skinparam classBackgroundColor MODEL_COLOR
+
+EventsBook *-right-> "1" UniqueEventsList
+
+
+UniqueEventsList -right-> Event
+
+Class Person
+note right: Clients tagged to the event
+
+Event *-r-> "*" Person
+Event *--> EventName
+Event *--> TimeStart
+Event *--> TimeEnd
+Event *--> Location
+Event *--> EventDescription
+Event *--> TelegramName
+
+@enduml
