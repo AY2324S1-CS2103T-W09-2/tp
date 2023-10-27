@@ -15,7 +15,7 @@ Class PersonListPanel
 Class PersonCard
 Class FinanceListPanel
 Class FinanceCard
-Class EventsListPanel
+Class EventListPanel
 Class EventsCard
 Class StatusBarFooter
 Class CommandBox
@@ -41,7 +41,7 @@ MainWindow *-down->  "1" CommandBox
 MainWindow *-down-> "1" ResultDisplay
 MainWindow *-down-> "0..1" PersonListPanel
 MainWindow *-down-> "0..1" FinanceListPanel
-MainWindow *-down-> "0..1" EventsListPanel
+MainWindow *-down-> "0..1" EventListPanel
 MainWindow *-down-> "1" StatusBarFooter
 MainWindow *-down-> "1" ContactsTab
 MainWindow *-down-> "1" FinanceTab
@@ -50,7 +50,7 @@ MainWindow --> "0..1" HelpWindow
 
 PersonListPanel -down-> "*" PersonCard
 FinanceListPanel -down-> "*" FinanceCard
-EventsListPanel -down-> "*" EventsCard
+EventListPanel -down-> "*" EventsCard
 
 
 MainWindow -left-|> UiPart
@@ -59,7 +59,7 @@ ResultDisplay --|> UiPart
 CommandBox --|> UiPart
 PersonListPanel --|> UiPart
 PersonCard --|> UiPart
-EventsListPanel --|> UiPart
+EventListPanel --|> UiPart
 FinanceListPanel --|> UiPart
 StatusBarFooter --|> UiPart
 HelpWindow --|> UiPart
@@ -76,7 +76,7 @@ MainWindow -left-> Logic
 
 PersonListPanel -[hidden]left- HelpWindow
 FinanceListPanel -[hidden]left- HelpWindow
-EventsListPanel -[hidden]left- HelpWindow
+EventListPanel -[hidden]left- HelpWindow
 HelpWindow -[hidden]left- CommandBox
 CommandBox -[hidden]left- ResultDisplay
 ResultDisplay -[hidden]left- StatusBarFooter
