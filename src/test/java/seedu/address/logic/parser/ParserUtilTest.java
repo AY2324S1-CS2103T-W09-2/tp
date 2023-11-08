@@ -37,7 +37,7 @@ public class ParserUtilTest {
     private static final String INVALID_EMAIL = "example.com";
     private static final String INVALID_TELEGRAM_NAME = "R@chel_!.";
     private static final String INVALID_AMOUNT = "-900";
-    private static final String INVALID_CLIENT = createMoreThanAllowedString();
+    private static final String INVALID_CLIENT = "R@chel";
     private static final String INVALID_DESCRIPTION = createMoreThanAllowedString();
     private static final String VALID_NAME = "Rachel Walker";
     private static final String VALID_PHONE = "123456";
@@ -364,7 +364,7 @@ public class ParserUtilTest {
         assertEquals(expectedDescription, ParserUtil.parseDescription(VALID_DESCRIPTION));
     }
 
-    public static String createMoreThanAllowedString() {
+    private static String createMoreThanAllowedString() {
         StringBuilder sb = new StringBuilder();
         for (int i = 0; i < 257; i++) {
             sb.append("a");

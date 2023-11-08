@@ -1,7 +1,6 @@
 package seedu.address.storage;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
-import static seedu.address.logic.parser.ParserUtilTest.createMoreThanAllowedString;
 import static seedu.address.storage.JsonAdaptedPerson.MISSING_FIELD_MESSAGE_FORMAT;
 import static seedu.address.testutil.Assert.assertThrows;
 import static seedu.address.testutil.TypicalPersons.BENSON;
@@ -10,19 +9,16 @@ import org.junit.jupiter.api.Test;
 
 import seedu.address.commons.exceptions.IllegalValueException;
 import seedu.address.model.person.Address;
-import seedu.address.model.person.Company;
 import seedu.address.model.person.Email;
 import seedu.address.model.person.Name;
 import seedu.address.model.person.Phone;
-import seedu.address.model.person.TelegramName;
 
 public class JsonAdaptedPersonTest {
-    private static final String TEXT_MORE_THAN_256 = createMoreThanAllowedString();
-    private static final String INVALID_NAME = TEXT_MORE_THAN_256;
-    private static final String INVALID_PHONE = "234";
-    private static final String INVALID_ADDRESS = TEXT_MORE_THAN_256;
+    private static final String INVALID_NAME = "R@chel";
+    private static final String INVALID_PHONE = "+651234";
+    private static final String INVALID_ADDRESS = " ";
     private static final String INVALID_EMAIL = "example.com";
-    private static final String INVALID_COMPANY = TEXT_MORE_THAN_256;
+    private static final String INVALID_COMPANY = "!! ";
     private static final String INVALID_TELEGRAM_NAME = "!!._wd ";
 
     private static final String VALID_NAME = BENSON.getName().toString();
@@ -102,7 +98,7 @@ public class JsonAdaptedPersonTest {
         JsonAdaptedPerson person =
                 new JsonAdaptedPerson(VALID_NAME, VALID_PHONE, VALID_EMAIL, VALID_ADDRESS,
                         INVALID_COMPANY, VALID_TELEGRAM_NAME);
-        String expectedMessage = Company.MESSAGE_CONSTRAINTS;
+        String expectedMessage = Address.MESSAGE_CONSTRAINTS;
         assertThrows(IllegalValueException.class, expectedMessage, person::toModelType);
     }
 
@@ -111,7 +107,7 @@ public class JsonAdaptedPersonTest {
         JsonAdaptedPerson person =
                 new JsonAdaptedPerson(VALID_NAME, VALID_PHONE, VALID_EMAIL, VALID_ADDRESS,
                         VALID_COMPANY, INVALID_TELEGRAM_NAME);
-        String expectedMessage = TelegramName.MESSAGE_CONSTRAINTS;
+        String expectedMessage = Address.MESSAGE_CONSTRAINTS;
         assertThrows(IllegalValueException.class, expectedMessage, person::toModelType);
     }
 

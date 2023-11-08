@@ -90,8 +90,6 @@ public class JsonAdaptedPerson {
 
         if (Objects.equals(address, "") || address == null) {
             modelAddress = new Address("");
-        } else if (!Address.isValidAddress(address)) {
-            throw new IllegalValueException(Address.MESSAGE_CONSTRAINTS);
         } else {
             modelAddress = new Address(address);
         }
@@ -99,8 +97,6 @@ public class JsonAdaptedPerson {
         final Company modelCompany;
         if (Objects.equals(company, "") || company == null) {
             modelCompany = new Company("");
-        } else if (!Company.isValidCompany(company)) {
-            throw new IllegalValueException(Company.MESSAGE_CONSTRAINTS);
         } else {
             modelCompany = new Company(company);
         }
@@ -108,8 +104,6 @@ public class JsonAdaptedPerson {
         final TelegramName modelTelegramName;
         if (Objects.equals(telegramName, "") || telegramName == null) {
             modelTelegramName = new TelegramName("");
-        } else if (!TelegramName.isValidTelegramName(telegramName)) {
-            throw new IllegalValueException(TelegramName.MESSAGE_CONSTRAINTS);
         } else {
             modelTelegramName = new TelegramName(telegramName);
         }
