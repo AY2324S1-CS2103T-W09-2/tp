@@ -108,9 +108,10 @@
       "title": "User Guide",
       "headings": {
         "freelancebuddy-user-guide": "FreelanceBuddy User Guide",
-        "attention-to-full-time-freelancers": "Attention to full-time freelancers",
-        "quick-start": "Quick start",
+        "getting-started": "Getting Started",
+        "quick-start": "Quick Start",
         "features": "Features",
+        "commands": "Commands",
         "viewing-help-help": "Viewing help: help",
         "switching-tabs-tab": "Switching tabs → tab",
         "contact-management": "Contact Management",
