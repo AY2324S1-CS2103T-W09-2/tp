@@ -155,7 +155,7 @@ with(this){return _c('h2',{attrs:{"id":"add-a-placeholder-element-for-remark-to-
 with(this){return _c('p',[_v("Without getting too deep into "),_c('code',{pre:true,attrs:{"class":"hljs inline no-lang"}},[_v("fxml")]),_v(", let’s go on a 5 minute adventure to get some placeholder text to show up for each person.")])}
 },function anonymous(
 ) {
-with(this){return _c('p',[_v("Simply add the following to "),_c('a',{attrs:{"href":"https://github.com/se-edu/addressbook-level3/commit/850b78879582f38accb05dd20c245963c65ea599#diff-639834f1e05afe2276a86372adf0fe5f69314642c2d93cfa543d614ce5a76688"}},[_c('code',{pre:true,attrs:{"class":"hljs inline no-lang"}},[_v("seedu.address.ui.PersonCard")])]),_v(".")])}
+with(this){return _c('p',[_v("Simply add the following to "),_c('a',{attrs:{"href":"https://github.com/se-edu/addressbook-level3/commit/850b78879582f38accb05dd20c245963c65ea599#diff-639834f1e05afe2276a86372adf0fe5f69314642c2d93cfa543d614ce5a76688"}},[_c('code',{pre:true,attrs:{"class":"hljs inline no-lang"}},[_v("seedu.address.ui.contacts.PersonCard")])]),_v(".")])}
 },function anonymous(
 ) {
 with(this){return _c('p',[_c('strong',[_c('code',{pre:true,attrs:{"class":"hljs inline no-lang"}},[_v("PersonCard.java")]),_v(":")])])}
@@ -290,6 +290,6 @@ with(this){return _c('h2',{attrs:{"id":"conclusion"}},[_v("Conclusion"),_c('a',{
 with(this){return _c('p',[_v("This concludes the tutorial for adding a new "),_c('code',{pre:true,attrs:{"class":"hljs inline no-lang"}},[_v("Command")]),_v(" to AddressBook.")])}
 },function anonymous(
 ) {
-with(this){return _c('footer',[_c('div',{staticClass:"text-center"},[_c('small',[_v("["),_c('span',[_c('strong',[_v("Powered by")])]),_v(" "),_c('img',{attrs:{"src":"https://markbind.org/favicon.ico","width":"30"}}),_v(" "),_c('a',{attrs:{"href":"https://markbind.org/"}},[_v("MarkBind 5.1.0")]),_v(", generated on Sun, 12 Nov 2023, 17:32:07 GMT+8]")])])])}
+with(this){return _c('footer',[_c('div',{staticClass:"text-center"},[_c('small',[_v("["),_c('span',[_c('strong',[_v("Powered by")])]),_v(" "),_c('img',{attrs:{"src":"https://markbind.org/favicon.ico","width":"30"}}),_v(" "),_c('a',{attrs:{"href":"https://markbind.org/"}},[_v("MarkBind 5.1.0")]),_v(", generated on Sun, 12 Nov 2023, 18:41:15 GMT+8]")])])])}
 }];
   
