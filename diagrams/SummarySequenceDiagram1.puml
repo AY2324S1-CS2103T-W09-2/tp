@@ -1,0 +1,43 @@
+@startuml
+!include style.puml
+skinparam ArrowFontStyle plain
+
+box Logic LOGIC_COLOR_T1
+participant ":LogicManager" as LogicManager LOGIC_COLOR
+participant ":FinanceParser" as FinanceParser LOGIC_COLOR
+participant ":SummaryCommandParser" as SummaryCommandParser LOGIC_COLOR
+participant "s:SummaryCommand" as SummaryCommand LOGIC_COLOR
+end box
+
+[-> LogicManager : execute("summary John Doe")
+activate LogicManager
+
+LogicManager -> FinanceParser : parseCommand("summary John Doe")
+activate FinanceParser
+
+create SummaryCommandParser
+FinanceParser -> SummaryCommandParser
+activate SummaryCommandParser
+
+SummaryCommandParser --> FinanceParser
+deactivate SummaryCommandParser
+
+FinanceParser -> SummaryCommandParser : parse("John Doe")
+activate SummaryCommandParser
+
+create SummaryCommand
+SummaryCommandParser -> SummaryCommand : SummaryCommand(new ClientNameExactMatchPredicate("John Doe"))
+activate SummaryCommand
+
+SummaryCommand --> SummaryCommandParser : s
+deactivate SummaryCommand
+
+SummaryCommandParser --> FinanceParser : s
+deactivate SummaryCommandParser
+
+
+FinanceParser --> LogicManager : s
+deactivate FinanceParser
+
+
+@enduml

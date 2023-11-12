@@ -1,0 +1,46 @@
+@startuml
+!include style.puml
+skinparam ArrowFontStyle plain
+
+box Logic LOGIC_COLOR_T1
+participant ":LogicManager" as LogicManager LOGIC_COLOR
+participant "s:SummaryCommand" as SummaryCommand LOGIC_COLOR
+participant ":CommandResult" as CommandResult LOGIC_COLOR
+end box
+
+box Model MODEL_COLOR_T1
+participant ":Model" as Model MODEL_COLOR
+end box
+
+activate LogicManager
+
+LogicManager -> SummaryCommand : execute()
+
+activate SummaryCommand
+
+SummaryCommand -> Model : updateFilteredFinanceList(namePredicate)
+activate Model
+
+Model --> SummaryCommand
+deactivate Model
+
+SummaryCommand -> Model : getFilteredFinanceList()
+
+activate Model
+
+Model --> SummaryCommand : filteredFinances
+deactivate Model
+
+create CommandResult
+SummaryCommand -> CommandResult : CommandResult(generateSummary(financeFinances, "John Doe"))
+activate CommandResult
+
+CommandResult --> SummaryCommand : summary report
+deactivate CommandResult
+
+SummaryCommand --> LogicManager : summary report
+deactivate SummaryCommand
+
+[<--LogicManager
+deactivate LogicManager
+@enduml
