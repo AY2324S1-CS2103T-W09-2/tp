@@ -58,6 +58,7 @@
         "duplicates-of-contact-names": "Duplicates of contact names",
         "duplicates-of-contact-phone-numbers": "Duplicates of contact phone numbers",
         "date-time-parsing": "Date-time Parsing",
+        "planned-enhancements": "Planned Enhancements",
         "documentation-logging-testing-configuration-dev-ops": "Documentation, logging, testing, configuration, dev-ops",
         "appendix-requirements": "Appendix: Requirements",
         "product-scope": "Product scope",
@@ -67,6 +68,7 @@
         "glossary": "Glossary",
         "appendix-instructions-for-manual-testing": "Appendix: Instructions for manual testing",
         "launch-and-shutdown": "Launch and shutdown",
+        "test-cases-for-finance": "Test cases for Finance",
         "adding-a-commission": "Adding a commission",
         "deleting-a-person": "Deleting a person",
         "saving-data": "Saving data"
