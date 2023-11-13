@@ -1,13 +1,17 @@
 @startuml
 !include style.puml
 skinparam ArrowFontStyle plain
+skinparam sequenceReferenceBorderColor red
+skinparam sequenceReferenceBackgroundColor pink
 
+box LOGIC_COLOR_T1
 Participant "<<class>>\nDateTimeParser" as DateTimeParser UI_COLOR
 Participant ":DateTimeFormatterBuilder" as DateTimeFormatterBuilder USER_COLOR
 Participant ":DateTimeFormatter" as DateTimeFormatter USER_COLOR
 Participant "<<class>>\nLocalTime" as LocalTimeClass UI_COLOR
 Participant "time:LocalTime" as LocalTime USER_COLOR
 Participant ":DateTimeException" as DateTimeException MODEL_COLOR
+end box
 
 activate DateTimeParser
 DateTimeParser -[LOGIC_COLOR]> DateTimeParser: parseTwoElementsNumberTimeFormat(timeInput)
@@ -16,8 +20,8 @@ note bottom
     to reduce diagram complexity
 end note
 
-alt valid input
-    loop Iterate over 2 element time formats
+alt #Red auth
+    loop Iterate over formats
         DateTimeParser -[LOGIC_COLOR]> DateTimeFormatterBuilder ** : new DateTimeFormatterBuilder()
         activate DateTimeFormatterBuilder
         DateTimeFormatterBuilder -[LOGIC_COLOR]> DateTimeFormatterBuilder: parseCaseInsensitive()
