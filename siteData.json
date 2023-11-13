@@ -75,7 +75,10 @@
         "deleting-a-person": "Deleting a person",
         "filtering-a-person": "Filtering a person",
         "test-cases-for-finance": "Test cases for Finance",
+        "listing-all-finances": "Listing all finances",
         "adding-a-commission": "Adding a commission",
+        "adding-an-expense": "Adding an expense",
+        "editing-a-finance": "Editing a finance",
         "deleting-a-person-2": "Deleting a person",
         "saving-data": "Saving data"
       },
