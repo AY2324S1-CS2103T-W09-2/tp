@@ -55,8 +55,6 @@
         "add-finance-feature": "Add Finance feature",
         "filtering-lists": "Filtering Lists",
         "changing-tabs": "Changing Tabs",
-        "duplicates-of-contact-names": "Duplicates of contact names",
-        "duplicates-of-contact-phone-numbers": "Duplicates of contact phone numbers",
         "date-time-parsing": "Date-time Parsing",
         "planned-enhancements": "Planned Enhancements",
         "documentation-logging-testing-configuration-dev-ops": "Documentation, logging, testing, configuration, dev-ops",
@@ -79,8 +77,12 @@
         "adding-a-commission": "Adding a commission",
         "adding-an-expense": "Adding an expense",
         "editing-a-finance": "Editing a finance",
-        "deleting-a-person-2": "Deleting a person",
-        "saving-data": "Saving data"
+        "test-cases-for-events": "Test cases for Events",
+        "listing-events": "Listing events",
+        "adding-an-event": "Adding an event",
+        "editing-an-event": "Editing an event",
+        "deleting-an-event": "Deleting an event",
+        "filtering-an-event": "Filtering an event"
       },
       "headingKeywords": {}
     },
