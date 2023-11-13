@@ -1,0 +1,57 @@
+@startuml
+!include style.puml
+skinparam ArrowFontStyle plain
+
+box Ui UI_COLOR_T1
+participant ":ContactsTab" as ContactsTab UI_COLOR
+end box
+
+box Logic LOGIC_COLOR_T1
+participant ":LogicManager" as LogicManager LOGIC_COLOR
+participant ":ContactParser" as ContactParser LOGIC_COLOR
+participant "t:TabCommand" as TabCommand LOGIC_COLOR
+end box
+
+[-> ContactsTab : executeCommand(tab events)
+activate ContactsTab
+
+ContactsTab -> LogicManager : execute(tab events)
+activate LogicManager
+
+LogicManager -> ContactParser : parseCommand(tab events)
+activate ContactParser
+
+create TabCommand
+ContactParser -> TabCommand
+activate TabCommand
+
+TabCommand --> ContactParser
+deactivate TabCommand
+
+ContactParser --> LogicManager : t
+deactivate ContactParser
+
+LogicManager -> TabCommand : execute()
+activate TabCommand
+
+TabCommand --> LogicManager : 2
+note right
+Tab index for the events tab is "2"
+end note
+deactivate TabCommand
+TabCommand -[hidden]-> LogicManager : 2
+destroy TabCommand
+
+ContactsTab <-- LogicManager
+deactivate LogicManager
+
+ContactsTab --> ContactsTab : handleTabChange(2)
+note left
+Change tab to index 2
+as shown on the GUI
+end note
+
+[<-- ContactsTab
+deactivate ContactsTab
+
+@enduml
