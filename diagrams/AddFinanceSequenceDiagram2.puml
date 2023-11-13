@@ -1,0 +1,49 @@
+@startuml
+!include style.puml
+skinparam ArrowFontStyle plain
+skinparam sequenceReferenceBorderColor red
+skinparam sequenceReferenceBackgroundColor pink
+
+mainframe sd Create AddCommissionCommand
+
+box Logic LOGIC_COLOR_T1
+participant ":AddCommissionCommandParser" as AddCommissionCommandParser LOGIC_COLOR
+participant "<<class>>\nParserUtil" as ParserUtil LOGIC_COLOR
+participant "a:AddCommissionCommand" as AddCommissionCommand LOGIC_COLOR
+end box
+
+box Model MODEL_COLOR_T1
+participant "<<class>>\nPerson" as Person MODEL_COLOR
+participant "c:Commission" as Commission MODEL_COLOR
+end box
+
+activate AddCommissionCommandParser
+
+AddCommissionCommandParser -> ParserUtil : parseClient("John")
+activate ParserUtil
+
+create Person
+ParserUtil -> Person : makeDummyWithName("John")
+activate Person
+Person --> ParserUtil : client
+deactivate Person
+ParserUtil --> AddCommissionCommandParser : client
+deactivate ParserUtil
+
+create Commission
+AddCommissionCommandParser -> Commission : Commission(amount, client, description, new TimeDue(dateTime))
+activate Commission
+
+Commission --> AddCommissionCommandParser : c
+deactivate Commission
+
+create AddCommissionCommand
+AddCommissionCommandParser -> AddCommissionCommand : AddCommissionCommand(c)
+activate AddCommissionCommand
+AddCommissionCommand --> AddCommissionCommandParser : a
+deactivate AddCommissionCommand
+
+deactivate AddCommissionCommandParser
+
+
+@enduml

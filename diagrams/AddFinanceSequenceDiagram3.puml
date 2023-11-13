@@ -1,0 +1,55 @@
+@startuml
+!include style.puml
+skinparam ArrowFontStyle plain
+skinparam sequenceReferenceBorderColor red
+skinparam sequenceReferenceBackgroundColor pink
+
+box Logic LOGIC_COLOR_T1
+participant ":LogicManager" as LogicManager LOGIC_COLOR
+participant "a:AddCommissionCommand" as AddCommissionCommand LOGIC_COLOR
+participant ":CommandResult" as CommandResult LOGIC_COLOR
+end box
+
+box Model MODEL_COLOR_T1
+participant ":Model" as Model MODEL_COLOR
+end box
+
+activate LogicManager
+LogicManager -> AddCommissionCommand : execute()
+activate AddCommissionCommand
+
+AddCommissionCommand -> Model : isValidClient(client)
+activate Model
+Model --> AddCommissionCommand
+deactivate Model
+
+AddCommissionCommand -> Model : getMatchedClient(client)
+activate Model
+Model --> AddCommissionCommand : actual client
+deactivate Model
+
+ref over AddCommissionCommand : set actual client to commission
+
+AddCommissionCommand -> Model : addCommission(toAdd)
+activate Model
+Model --> AddCommissionCommand
+deactivate Model
+
+create CommandResult
+AddCommissionCommand -> CommandResult : CommandResult(String.format(MESSAGE_SUCCESS, Messages.formatFinance(toAdd)))
+activate CommandResult
+CommandResult --> AddCommissionCommand : status message
+deactivate CommandResult
+
+AddCommissionCommand --> LogicManager : status message
+deactivate AddCommissionCommand
+
+<-- LogicManager
+deactivate LogicManager
+
+
+
+
+
+
+@enduml

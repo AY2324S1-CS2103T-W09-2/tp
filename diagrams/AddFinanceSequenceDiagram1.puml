@@ -1,0 +1,38 @@
+@startuml
+!include style.puml
+skinparam ArrowFontStyle plain
+skinparam sequenceReferenceBorderColor red
+skinparam sequenceReferenceBackgroundColor pink
+
+box Logic LOGIC_COLOR_T1
+participant ":LogicManager" as LogicManager LOGIC_COLOR
+participant ":FinanceParser" as FinanceParser LOGIC_COLOR
+participant ":AddCommissionCommandParser" as AddCommissionCommandParser LOGIC_COLOR
+end box
+
+-> LogicManager : execute("add-c c/John a/20 d/Chatbot")
+activate LogicManager
+
+LogicManager -> FinanceParser : parseCommand("add-c c/John a/20 d/Chatbot")
+activate FinanceParser
+
+create AddCommissionCommandParser
+FinanceParser -> AddCommissionCommandParser
+activate AddCommissionCommandParser
+
+AddCommissionCommandParser --> FinanceParser
+deactivate AddCommissionCommandParser
+
+FinanceParser -> AddCommissionCommandParser : parse("c/John a/20 d/Chatbot")
+activate AddCommissionCommandParser
+
+ref over AddCommissionCommandParser : Create AddCommissionCommand
+
+AddCommissionCommandParser --> FinanceParser
+deactivate AddCommissionCommandParser
+
+FinanceParser --> LogicManager
+deactivate FinanceParser
+
+
+@enduml
