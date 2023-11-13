@@ -11,12 +11,8 @@ Class UiManager
 Class MainWindow
 Class HelpWindow
 Class ResultDisplay
-Class PersonListPanel
-Class PersonCard
 Class FinanceListPanel
 Class FinanceCard
-Class EventListPanel
-Class EventsCard
 Class StatusBarFooter
 Class CommandBox
 Class ContactsTab
@@ -39,27 +35,22 @@ UiManager .left.|> Ui
 UiManager -down-> "1" MainWindow
 MainWindow *-down->  "1" CommandBox
 MainWindow *-down-> "1" ResultDisplay
-MainWindow *-down-> "0..1" PersonListPanel
+
 MainWindow *-down-> "0..1" FinanceListPanel
-MainWindow *-down-> "0..1" EventListPanel
 MainWindow *-down-> "1" StatusBarFooter
 MainWindow *-down-> "1" ContactsTab
 MainWindow *-down-> "1" FinanceTab
 MainWindow *-down-> "1" EventsTab
 MainWindow --> "0..1" HelpWindow
 
-PersonListPanel -down-> "*" PersonCard
+
 FinanceListPanel -down-> "*" FinanceCard
-EventListPanel -down-> "*" EventsCard
 
 
 MainWindow -left-|> UiPart
 
 ResultDisplay --|> UiPart
 CommandBox --|> UiPart
-PersonListPanel --|> UiPart
-PersonCard --|> UiPart
-EventListPanel --|> UiPart
 FinanceListPanel --|> UiPart
 StatusBarFooter --|> UiPart
 HelpWindow --|> UiPart
@@ -67,22 +58,19 @@ ContactsTab --|> UiPart
 FinanceTab --|> UiPart
 EventsTab --|> UiPart
 
-PersonCard ..> Model
+
 FinanceCard ..> Model
-EventsCard ..> Model
-UiManager -right-> Logic
-MainWindow -left-> Logic
+UiManager -up-> Logic
+MainWindow -up-> Logic
 
 
-PersonListPanel -[hidden]left- HelpWindow
-FinanceListPanel -[hidden]left- HelpWindow
-EventListPanel -[hidden]left- HelpWindow
+FinanceListPanel -[hidden]up- HelpWindow
 HelpWindow -[hidden]left- CommandBox
 CommandBox -[hidden]left- ResultDisplay
 ResultDisplay -[hidden]left- StatusBarFooter
 StatusBarFooter -[hidden]left- ContactsTab
-ContactsTab -[hidden]left- FinanceTab
-FinanceTab -[hidden]left- EventsTab
+ContactsTab -[hidden]up- FinanceTab
+FinanceTab -[hidden]up- EventsTab
 
 MainWindow -[hidden]-|> UiPart
 @enduml
