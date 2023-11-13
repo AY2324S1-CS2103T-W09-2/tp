@@ -1,0 +1,24 @@
+@startuml
+skin rose
+skinparam ActivityFontSize 15
+skinparam ArrowFontSize 12
+start
+:convert input to lowercase;
+
+:tokenise string into String[];
+
+:toAdd = second word;
+
+if () then ([third word is day or days])
+    :return today + (toAdd) days;
+else if () then ([third word is week or weeks])
+    :return today + (toAdd) weeks;
+else if () then ([third word is month or months])
+    :return today + (toAdd) months;
+else if () then ([third word is year or years])
+    :return today + (toAdd) years;
+else ([else])
+    :return null;
+endif
+stop
+@enduml

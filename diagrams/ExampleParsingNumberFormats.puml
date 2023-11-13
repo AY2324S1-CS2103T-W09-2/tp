@@ -1,0 +1,50 @@
+@startuml
+!include style.puml
+skinparam ArrowFontStyle plain
+
+Participant "<<class>>\nDateTimeParser" as DateTimeParser UI_COLOR
+Participant ":DateTimeFormatterBuilder" as DateTimeFormatterBuilder USER_COLOR
+Participant ":DateTimeFormatter" as DateTimeFormatter USER_COLOR
+Participant "<<class>>\nLocalTime" as LocalTimeClass UI_COLOR
+Participant "time:LocalTime" as LocalTime USER_COLOR
+Participant ":DateTimeException" as DateTimeException MODEL_COLOR
+
+activate DateTimeParser
+DateTimeParser -[LOGIC_COLOR]> DateTimeParser: parseTwoElementsNumberTimeFormat(timeInput)
+note bottom
+    Assumes valid input (length is 2)
+    to reduce diagram complexity
+end note
+
+alt valid input
+    loop Iterate over 2 element time formats
+        DateTimeParser -[LOGIC_COLOR]> DateTimeFormatterBuilder ** : new DateTimeFormatterBuilder()
+        activate DateTimeFormatterBuilder
+        DateTimeFormatterBuilder -[LOGIC_COLOR]> DateTimeFormatterBuilder: parseCaseInsensitive()
+        DateTimeFormatterBuilder -[LOGIC_COLOR]> DateTimeFormatterBuilder: appendPattern(format)
+        DateTimeFormatterBuilder -[LOGIC_COLOR]> DateTimeFormatter ** : toFormatter(Locale.ENGLISH)
+        activate DateTimeFormatter
+        deactivate DateTimeFormatterBuilder
+        activate LocalTimeClass
+        LocalTimeClass -[LOGIC_COLOR]> DateTimeFormatter: parse()
+        alt Parsing Successful
+            DateTimeFormatter -[LOGIC_COLOR]-> LocalTimeClass : return LocalTime
+            LocalTimeClass -[LOGIC_COLOR]-> LocalTime ** : return
+            activate LocalTime
+            LocalTime -[LOGIC_COLOR]-> DateTimeParser: return time
+            <-[LOGIC_COLOR]- DateTimeParser :return time
+            deactivate LocalTime
+            break
+        else Parsing Failed
+            DateTimeFormatter -[LOGIC_COLOR]> DateTimeException ** : throw DateTimeException exception
+            activate DateTimeException
+            DateTimeException -[LOGIC_COLOR]> DateTimeParser: catch DateTimeException
+            deactivate DateTimeException
+            deactivate DateTimeFormatter
+            deactivate LocalTimeClass
+        end
+    end
+end
+    <-[LOGIC_COLOR]- DateTimeParser : return null
+deactivate DateTimeParser
+@enduml

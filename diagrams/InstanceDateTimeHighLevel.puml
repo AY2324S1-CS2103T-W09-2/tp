@@ -1,0 +1,15 @@
+@startuml
+skin rose
+skinparam ActivityFontSize 15
+skinparam ArrowFontSize 12
+start
+:parseDateTimeInstance;
+:parse[Number]Elements;
+:parse[Number]ElementsTime;
+:parse[Number]ElementsNumberTimeFormat;
+:parse[Number]ElementsEnglishTimeFormat;
+:parse[Number]ElementsDate;
+:parse[Number]ElementsNumberDateFormat;
+:parse[Number]ElementsEnglishDateFormat;
+stop
+@enduml

@@ -1,0 +1,46 @@
+@startuml
+skin rose
+skinparam ActivityFontSize 15
+skinparam ArrowFontSize 12
+start
+:Takes in String[] input;
+
+:Parse the last word as a 1 element time input;
+
+if () then ([parse successful])
+    :Parse first two element as date;
+    if () then ([parse successful]))
+        :return LocalDateTime parsed;
+    else ([else]))
+        :return null;
+    endif
+    stop
+else ([else])
+endif
+
+:Parse last two words as 2 element time input;
+
+if () then ([parse successful]))
+    :Parse first element as date;
+    if () then ([parse successful]))
+            :return LocalDateTime parsed;
+    else ([else]))
+            :throw ParseException;
+    endif
+    stop
+else ([else])
+endif
+
+:Parse entire input as date;
+:Parse entire input as time;
+
+if () then ([date parse successful]))
+    :return LocalDateTime with parsed date at 00:00;
+else if () then ([time parse successful]))
+    :get date of next occurrence of time;
+    :return LocalDateTime;
+else ([else]))
+    :throw ParseException;
+endif
+stop
+@enduml

@@ -1,0 +1,45 @@
+@startuml
+skin rose
+skinparam ActivityFontSize 15
+skinparam ArrowFontSize 12
+start
+:Takes in String input;
+
+:Checks if input contains "now";
+
+if () then ([contains "now"])
+    :Parse it as a now date time format;
+    if () then ([parse failure])
+        :Throw parse exception;
+    else ([else])
+        :Return DateTime value succesfully parsed;
+    endif
+    stop
+else ([else])
+endif
+
+:Tokenise string into String[] with regex " ";
+
+:Count number of words;
+
+if () then ([array.length > 5])
+    : Throw parse exception;
+    stop
+else ([else])
+endif
+
+if () then ([number of words = 1])
+    :Parse One Word Inputs;
+else if () then ([number of words = 2])
+    :Parse Two Word Inputs;
+else if () then ([number of words = 3])
+    :Parse Three Word Inputs;
+else if () then ([number of words = 4])
+    :Parse Four Word Inputs;
+else if () then ([number of words = 5])
+    :Parse Five Word Inputs;
+else ([else])
+    :Throw parse exception;
+endif
+stop
+@enduml
