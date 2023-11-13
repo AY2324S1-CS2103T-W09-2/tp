@@ -1,0 +1,24 @@
+@startuml
+skin rose
+skinparam tabSize 150
+skinparam ActivityFontSize 15
+skinparam ArrowFontSize 12
+
+start
+:User launches FreelanceBuddy;
+repeat
+:FreelanceBuddy shows Tabs;
+if () then ([User decides to change Tabs])
+switch ()
+case ([clicks Contacts])
+    :Show Contacts Panel;
+case ([clicks Finance])
+    :Show Finance Panel;
+case ([clicks Events])
+    :Show Events Panel;
+endswitch
+else ([else])
+
+
+stop
+@enduml
