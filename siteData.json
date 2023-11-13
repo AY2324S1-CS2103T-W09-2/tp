@@ -68,9 +68,15 @@
         "glossary": "Glossary",
         "appendix-instructions-for-manual-testing": "Appendix: Instructions for manual testing",
         "launch-and-shutdown": "Launch and shutdown",
+        "test-cases-for-contacts": "Test cases for Contacts",
+        "listing-contacts": "Listing Contacts",
+        "adding-a-contact": "Adding a Contact",
+        "editing-a-contact": "Editing a Contact",
+        "deleting-a-person": "Deleting a person",
+        "filtering-a-person": "Filtering a person",
         "test-cases-for-finance": "Test cases for Finance",
         "adding-a-commission": "Adding a commission",
-        "deleting-a-person": "Deleting a person",
+        "deleting-a-person-2": "Deleting a person",
         "saving-data": "Saving data"
       },
       "headingKeywords": {}
