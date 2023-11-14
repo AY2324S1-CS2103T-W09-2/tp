@@ -209,7 +209,7 @@ with(this){return _c('p',[_v("Format: "),_c('code',{pre:true,attrs:{"class":"hlj
 with(this){return _c('p',[_c('a',{attrs:{"href":"#general-commands"}},[_v("Back to General Commands")])])}
 },function anonymous(
 ) {
-with(this){return _c('h4',{attrs:{"id":"clearing-all-entries-clear"}},[_v("Clearing all entries : "),_c('code',{pre:true,attrs:{"class":"hljs inline no-lang"}},[_v("clear")]),_c('a',{staticClass:"fa fa-anchor",attrs:{"href":"#clearing-all-entries-clear","onclick":"event.stopPropagation()"}})])}
+with(this){return _c('h4',{attrs:{"id":"clearing-all-entries-clear"}},[_v("Clearing all entries → "),_c('code',{pre:true,attrs:{"class":"hljs inline no-lang"}},[_v("clear")]),_c('a',{staticClass:"fa fa-anchor",attrs:{"href":"#clearing-all-entries-clear","onclick":"event.stopPropagation()"}})])}
 },function anonymous(
 ) {
 with(this){return _c('p',[_v("Format: "),_c('code',{pre:true,attrs:{"class":"hljs inline no-lang"}},[_v("clear")])])}
@@ -629,7 +629,7 @@ with(this){return _c('div',{staticClass:"table-responsive"},[_c('table',{staticC
 with(this){return _c('p',[_c('a',{attrs:{"href":"#events-management"}},[_v("Back to Events Management")])])}
 },function anonymous(
 ) {
-with(this){return _c('h4',{attrs:{"id":"editing-an-event-events-tab-edit"}},[_v("Editing an event: Events tab → "),_c('code',{pre:true,attrs:{"class":"hljs inline no-lang"}},[_v("edit")]),_c('a',{staticClass:"fa fa-anchor",attrs:{"href":"#editing-an-event-events-tab-edit","onclick":"event.stopPropagation()"}})])}
+with(this){return _c('h4',{attrs:{"id":"editing-an-event-events-tab-edit"}},[_v("Editing an event: Events Tab → "),_c('code',{pre:true,attrs:{"class":"hljs inline no-lang"}},[_v("edit")]),_c('a',{staticClass:"fa fa-anchor",attrs:{"href":"#editing-an-event-events-tab-edit","onclick":"event.stopPropagation()"}})])}
 },function anonymous(
 ) {
 with(this){return _c('p',[_v("Edits an existing event in the "),_c('strong',[_v("Events")]),_v(" tab.")])}
@@ -1109,6 +1109,6 @@ with(this){return _c('p',[_v("Still having issues? Please email us at "),_c('a',
 with(this){return _c('p',[_c('a',{attrs:{"href":"#table-of-contents"}},[_v("↑ Back to Table of Contents")])])}
 },function anonymous(
 ) {
-with(this){return _c('footer',[_c('div',{staticClass:"text-center"},[_c('small',[_v("["),_c('span',[_c('strong',[_v("Powered by")])]),_v(" "),_c('img',{attrs:{"src":"https://markbind.org/favicon.ico","width":"30"}}),_v(" "),_c('a',{attrs:{"href":"https://markbind.org/"}},[_v("MarkBind 5.1.0")]),_v(", generated on Tue, 14 Nov 2023, 11:07:33 GMT+8]")])])])}
+with(this){return _c('footer',[_c('div',{staticClass:"text-center"},[_c('small',[_v("["),_c('span',[_c('strong',[_v("Powered by")])]),_v(" "),_c('img',{attrs:{"src":"https://markbind.org/favicon.ico","width":"30"}}),_v(" "),_c('a',{attrs:{"href":"https://markbind.org/"}},[_v("MarkBind 5.1.0")]),_v(", generated on Tue, 14 Nov 2023, 11:57:03 GMT+8]")])])])}
 }];
   
