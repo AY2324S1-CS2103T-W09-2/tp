@@ -65,6 +65,6 @@ UniquePersonList -[hidden]right-> I
 
 ModelManager --> "~* filtered" Person
 ModelManager --> "~* filtered" Event
-ModelManager --> "~* filtered" Finance
+ModelManager -right-> "~* filtered" Finance
 
 @enduml
