@@ -85,7 +85,11 @@
         "adding-an-event": "Adding an event",
         "editing-an-event": "Editing an event",
         "deleting-an-event": "Deleting an event",
-        "filtering-an-event": "Filtering an event"
+        "filtering-an-event": "Filtering an event",
+        "test-cases-for-storage": "Test cases for Storage",
+        "deleting-data": "Deleting data",
+        "editing-data": "Editing data",
+        "loading-data": "Loading data"
       },
       "headingKeywords": {}
     },
